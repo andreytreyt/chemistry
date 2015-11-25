@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Reactions>
+  <!-- СОЕДИНЕНИЕ -->
+  <!--Реакции получения основных оскидов-->
+  <Compound K1="2" Subs1="Ni" K12="" K2="" Subs2="O" K22="2" Katalizator="+500-1000 ⁰C" K="2" Substance="NiO" SubstanceAd=""/>
+  <Compound K1="2" Subs1="Ba" K12="" K2="" Subs2="O" K22="2" Katalizator="" K="2" Substance="BaO" SubstanceAd=""/>
+  <Compound K1="2" Subs1="Ca" K12="" K2="" Subs2="O" K22="2" Katalizator="" K="2" Substance="CaO" SubstanceAd=""/>
+  <Compound K1="4" Subs1="Li" K12="" K2="" Subs2="O" K22="2" Katalizator="" K="2" Substance="Li2O" SubstanceAd=""/>
+  <Compound K1="2" Subs1="Cu" K12="" K2="" Subs2="O" K22="2" Katalizator="1100 ⁰C" K="2" Substance="CuO" SubstanceAd=""/>
+  <Compound K1="4" Subs1="Na" K12="" K2="" Subs2="O" K22="2" Katalizator="" K="2" Substance="Na2O" SubstanceAd=""/>
+  <Compound K1="2" Subs1="Fe" K12="" K2="" Subs2="O" K22="2" Katalizator="+t ⁰C" K="2" Substance="FeO" SubstanceAd=""/>
+  <Compound K1="3" Subs1="Fe" K12="" K2="2" Subs2="O" K22="2" Katalizator="150-600 ⁰C" K="" Substance="Fe3O4" SubstanceAd=""/>
+  <Compound K1="4" Subs1="Fe3O4" K12="" K2="" Subs2="O" K22="2" Katalizator="450-600 ⁰C" K="6" Substance="Fe2O3" SubstanceAd=""/>
+  <Compound K1="" Subs1="K" K12="" K2="" Subs2="O" K22="2" Katalizator="" K="2" Substance="KO2" SubstanceAd=""/>
+  <Compound K1="" Subs1="Fe3O4" K12="" K2="" Subs2="Fe" K22="2" Katalizator="900-1000 ⁰C" K="4" Substance="FeO" SubstanceAd=""/>
+  <Compound K1="6" Subs1="FeO" K12="" K2="" Subs2="O" K22="2" Katalizator="300-500 ⁰C" K="2" Substance="Fe3O4" SubstanceAd=""/>
+
+  <!--Реакции получения кислотных оскидов-->
+  <Compound K1="2" Subs1="H" K12="2" K2="" Subs2="O" K22="2" Katalizator="+100 ⁰C" K="2" Substance="H2O" SubstanceAd=""/>
+  <Compound K1="" Subs1="N" K12="2" K2="" Subs2="O" K22="2" Katalizator="+1200—1300 ⁰C" K="2" Substance="NO" SubstanceAd=""/>
+  <Compound K1="2" Subs1="Si" K12="" K2="" Subs2="O" K22="2" Katalizator="+400 ⁰C" K="2" Substance="SiO" SubstanceAd=""/>
+  <Compound K1="" Subs1="S" K12="" K2="" Subs2="O" K22="2" Katalizator="" K="" Substance="SiO2" SubstanceAd=""/>
+  <Compound K1="" Subs1="C" K12="" K2="" Subs2="O" K22="2" Katalizator="" K="" Substance="CO2" SubstanceAd=""/>
+  <Compound K1="4" Subs1="P" K12="" K2="5" Subs2="O" K22="2" Katalizator="" K="2" Substance="P2O5" SubstanceAd=""/>
+  <Compound K1="4" Subs1="B" K12="" K2="3" Subs2="O" K22="2" Katalizator="" K="2" Substance="B2O3" SubstanceAd=""/>
+
+  <!--Реакции получения амфотерных оскидов-->
+  <Compound K1="" Subs1="Ge" K12="" K2="" Subs2="O" K22="2" Katalizator="700 ⁰C" K="2" Substance="GeO2" SubstanceAd=""/>
+  <Compound K1="2" Subs1="Co" K12="" K2="" Subs2="O" K22="2" Katalizator="300 ⁰C" K="2" Substance="CoO" SubstanceAd=""/>
+  <Compound K1="" Subs1="Sn" K12="" K2="" Subs2="O" K22="2" Katalizator="220 ⁰C" K="" Substance="SnO2" SubstanceAd=""/>
+  <Compound K1="2" Subs1="Pb" K12="" K2="" Subs2="O" K22="2" Katalizator="600 ⁰C" K="2" Substance="PbO" SubstanceAd=""/>
+  <Compound K1="2" Subs1="Zn" K12="" K2="" Subs2="O" K22="2" Katalizator="" K="2" Substance="ZnO" SubstanceAd=""/>
+  <Compound K1="" Subs1="Ti" K12="" K2="" Subs2="O" K22="2" Katalizator="" K="" Substance="TiO2" SubstanceAd=""/>
+  <Compound K1="2" Subs1="Cd" K12="" K2="" Subs2="O" K22="2" Katalizator="" K="2" Substance="CdO" SubstanceAd=""/>
+  <Compound K1="2" Subs1="Be" K12="" K2="" Subs2="O" K22="2" Katalizator="" K="2" Substance="BeO" SubstanceAd=""/>
+  <Compound K1="2" Subs1="Mg" K12="" K2="" Subs2="O" K22="2" Katalizator="" K="2" Substance="MgO" SubstanceAd=""/>
+  <Compound K1="4" Subs1="Al" K12="" K2="3" Subs2="O" K22="2" Katalizator="" K="2" Substance="Al2O3" SubstanceAd=""/>
+
+  <!--Реакции получения кислот-->
+  <Compound K1="" Subs1="H" K12="2" K2="" Subs2="Cl" K22="2" Katalizator="" K="2" Substance="HCl" SubstanceAd=""/>
+  <Compound K1="" Subs1="H" K12="2" K2="" Subs2="F" K22="2" Katalizator="" K="2" Substance="HF" SubstanceAd=""/>
+  <Compound K1="" Subs1="H" K12="2" K2="" Subs2="Br" K22="2" Katalizator="+200-400 ⁰C" K="2" Substance="HBr" SubstanceAd=""/>
+  <Compound K1="" Subs1="H" K12="2" K2="" Subs2="I" K22="2" Katalizator="" K="2" Substance="HI" SubstanceAd=""/>
+  <Compound K1="" Subs1="S" K12="" K2="" Subs2="H" K22="2" Katalizator="+t ⁰C" K="" Substance="H2S" SubstanceAd=""/>
+
+  <!--Реакции получения солей-->
+  <Compound K1="2" Subs1="Li" K12="" K2="" Subs2="Cl" K22="2" Katalizator="" K="2" Substance="LiCl" SubstanceAd=""/>
+  <Compound K1="2" Subs1="Na" K12="" K2="" Subs2="Cl" K22="2" Katalizator="" K="2" Substance="NaCl" SubstanceAd=""/>
+  <Compound K1="" Subs1="Ba" K12="" K2="" Subs2="Cl" K22="2" Katalizator="" K="" Substance="BaCl2" SubstanceAd=""/>
+  <Compound K1="" Subs1="Zn" K12="" K2="" Subs2="Cl" K22="2" Katalizator="" K="" Substance="ZnCl2" SubstanceAd=""/>
+  <Compound K1="2" Subs1="K" K12="" K2="" Subs2="Cl" K22="2" Katalizator="" K="2" Substance="KCl" SubstanceAd=""/>
+  <Compound K1="2" Subs1="Fe" K12="" K2="3" Subs2="Cl" K22="2" Katalizator="" K="2" Substance="FeCl3" SubstanceAd=""/>
+  <Compound K1="" Subs1="Be" K12="" K2="" Subs2="F" K22="2" Katalizator="" K="" Substance="BeF2" SubstanceAd=""/>
+  <Compound K1="2" Subs1="Na" K12="" K2="" Subs2="F" K22="2" Katalizator="" K="" Substance="NaF" SubstanceAd=""/>
+  <Compound K1="" Subs1="HCl" K12="" K2="" Subs2="NH3" K22="" Katalizator="" K="" Substance="NH4Cl" SubstanceAd=""/>
+  <Compound K1="2" Subs1="SO2" K12="" K2="" Subs2="O" K22="2" Katalizator="" K="2" Substance="SO3" SubstanceAd=""/>
+  <Compound K1="" Subs1="SO3" K12="" K2="" Subs2="H2O" K22="" Katalizator="" K="" Substance="H2SO4" SubstanceAd=""/>
+  <Compound K1="" Subs1="Fe" K12="" K2="" Subs2="S" K22="" Katalizator="" K="" Substance="FeS" SubstanceAd=""/>
+  <Compound K1="" Subs1="CaO" K12="" K2="" Subs2="SO2" K22="" Katalizator="" K="" Substance="CaSO3" SubstanceAd=""/>
+  <Compound K1="" Subs1="BaO" K12="" K2="" Subs2="CO2" K22="" Katalizator="" K="" Substance="BaCO3" SubstanceAd=""/>
+  <Compound K1="" Subs1="BaO" K12="" K2="" Subs2="SO3" K22="" Katalizator="" K="" Substance="BaSO4" SubstanceAd=""/>
+  <Compound K1="" Subs1="Li2O" K12="" K2="" Subs2="CO2" K22="" Katalizator="500 ⁰C" K="" Substance="Li2CO3" SubstanceAd=""/>
+  <Compound K1="" Subs1="Na2O" K12="" K2="" Subs2="CO2" K22="" Katalizator="" K="" Substance="Na2CO3" SubstanceAd=""/>
+   
+  <!--Реакции получения гидроксидов-->
+  <Compound K1="" Subs1="Na2O" K12="" K2="" Subs2="H2O" K22="" Katalizator="" K="2" Substance="NaOH" SubstanceAd=""/>
+  <Compound K1="" Subs1="CaO" K12="" K2="" Subs2="H2O" K22="" Katalizator="" K="" Substance="Ca(OH)2" SubstanceAd="↓"/>
+  <Compound K1="" Subs1="Li2O" K12="" K2="" Subs2="H2O" K22="" Katalizator="" K="2" Substance="Li(OH)" SubstanceAd=""/>
+  
+  
+  
+  <!-- РАЗЛОЖЕНИЕ -->
+  <Decomposition K="2" Substance="HI" Katalizator="" K1="" Subs1="H" K12="2" Subs1Ad="" K2="" Subs2="I" K22="2" Subs2Ad=""/>
+  
+  <!--Реакции разложения оксидов-->
+  <Decomposition K="2" Substance="H2O2" Katalizator="" K1="2" Subs1="H2O" K12="" Subs1Ad="" K2="" Subs2="O" K22="2" Subs2Ad="↑"/>
+  <Decomposition K="2" Substance="HgO" Katalizator="" K1="2" Subs1="Hg" K12="" Subs1Ad="" K2="" Subs2="O" K22="2" Subs2Ad="↑"/>
+  <Decomposition K="2" Substance="NiO" Katalizator="" K1="2" Subs1="Ni" K12="" Subs1Ad="" K2="" Subs2="O" K22="2" Subs2Ad="↑"/>
+  <Decomposition K="" Substance="SO2" Katalizator="" K1="" Subs1="S" K12="" Subs1Ad="" K2="" Subs2="O" K22="2" Subs2Ad="↑"/>
+  <Decomposition K="2" Substance="Al2O3" Katalizator="" K1="4" Subs1="Al" K12="" Subs1Ad="" K2="3" Subs2="O" K22="2" Subs2Ad="↑"/>
+  <Decomposition K="2" Substance="NiO" Katalizator="600 ⁰C" K1="2" Subs1="Ni" K12="" Subs1Ad="" K2="" Subs2="O" K22="2" Subs2Ad="↑"/>
+  <Decomposition K="4" Substance="FeO" Katalizator="560-700 ⁰C" K1="" Subs1="Fe3O4" K12="" Subs1Ad="" K2="" Subs2="Fe" K22="" Subs2Ad=""/>
+  <Decomposition K="2" Substance="Fe3O4" Katalizator="1538 ⁰C" K1="6" Subs1="FeO" K12="" Subs1Ad="" K2="" Subs2="O" K22="2" Subs2Ad="↑"/> 
+  
+  <!--Реакции разложения солей-->  
+  <Decomposition K="2" Substance="AgCl" Katalizator="" K1="2" Subs1="Ag" K12="" Subs1Ad="" K2="" Subs2="Cl" K22="2" Subs2Ad="↑"/>
+  <Decomposition K="" Substance="NH4Cl" Katalizator="" K1="2" Subs1="NH3" K12="" Subs1Ad="↑" K2="" Subs2="HCl" K22="" Subs2Ad=""/>
+  <Decomposition K="" Substance="BaCO3" Katalizator="" K1="" Subs1="BaO" K12="" Subs1Ad="" K2="" Subs2="CO2" K22="" Subs2Ad="↑"/>
+  <Decomposition K="" Substance="CaCO3" Katalizator="" K1="" Subs1="CaO" K12="" Subs1Ad="" K2="" Subs2="CO2" K22="" Subs2Ad="↑"/>
+  <Decomposition K="" Substance="LI2CO3" Katalizator="" K1="" Subs1="Li2O" K12="" Subs1Ad="" K2="" Subs2="CO2" K22="" Subs2Ad="↑"/>
+  <Decomposition K="" Substance="NiCO3" Katalizator=">300 ⁰C" K1="" Subs1="NiO" K12="" Subs1Ad="" K2="" Subs2="CO2" K22="" Subs2Ad="↑"/>
+  <Decomposition K="" Substance="FeCO3" Katalizator="t" K1="" Subs1="FeO" K12="" Subs1Ad="" K2="" Subs2="CO2" K22="" Subs2Ad="↑"/>
+  <Decomposition K="" Substance="Na4SiO4" Katalizator="1120 ⁰C" K1="" Subs1="Na2SiO3" K12="" Subs1Ad="" K2="" Subs2="Na2O" K22="" Subs2Ad=""/>
+  <Decomposition K="" Substance="Fe2(SO4)3" Katalizator="" K1="" Subs1="Fe2O3" K12="" Subs1Ad="" K2="3" Subs2="SO3" K22="" Subs2Ad=""/>
+  
+  <!--Реакции разложения гидрооксидов-->
+  <Decomposition K="" Substance="Ca(OH)2" Katalizator="" K1="" Subs1="CaO" K12="" Subs1Ad="" K2="" Subs2="H2O" K22="" Subs2Ad=""/>
+  <Decomposition K="" Substance="Ni(OH)2" Katalizator="230-250 ⁰C" K1="" Subs1="NiO" K12="" Subs1Ad="" K2="" Subs2="H2O" K22="" Subs2Ad=""/>
+  <Decomposition K="" Substance="Fe(OH)2" Katalizator="150-200 ⁰C" K1="" Subs1="FeO" K12="" Subs1Ad="" K2="" Subs2="H2O" K22="" Subs2Ad=""/>
+  <Decomposition K="2" Substance="FeO(OH)" Katalizator="t" K1="" Subs1="Fe2O3" K12="" Subs1Ad="" K2="" Subs2="H2O" K22="" Subs2Ad=""/>
+  
+  <!-- ОБМЕН -->
+  <Exchange K1="" Subs1="FeCl3" K12="" K2="3" Subs2="NaOH" K22="" Katalizator="" K3="" Subs3="Fe(OH)3" K32="" Subs3Ad="↓" K4="3" Subs4="NaCl" K42="" Subs4Ad=""/>
+  <Exchange K1="" Subs1="Al2O3" K12="" K2="3" Subs2="H2SO4" K22="" Katalizator="" K3="" Subs3="Al2(SO4)3" K32="" Subs3Ad="" K4="3" Subs4="H2O" K42="" Subs4Ad=""/>
+  <Exchange K1="" Subs1="CaCl2" K12="" K2="2" Subs2="AgNO3" K22="" Katalizator="" K3="2" Subs3="AgCl" K32="" Subs3Ad="" K4="" Subs4="Ca(NO3)2" K42="" Subs4Ad=""/>
+  <Exchange K1="" Subs1="Ca(OH)2" K12="" K2="2" Subs2="HCl" K22="" Katalizator="" K3="" Subs3="CaCl2" K32="" Subs3Ad="" K4="2" Subs4="H2O" K42="" Subs4Ad=""/>
+  <Exchange K1="" Subs1="Ca(NO3)2" K12="" K2="" Subs2="Na2CO3" K22="" Katalizator="" K3="" Subs3="CaCO3" K32="" Subs3Ad="↓" K4="2" Subs4="NaNO3" K42="" Subs4Ad=""/>
+  <Exchange K1="" Subs1="Pb(NO3)2" K12="" K2="2" Subs2="HCl" K22="" Katalizator="" K3="" Subs3="PbCl2" K32="" Subs3Ad="↓" K4="2" Subs4="HNO3" K42="" Subs4Ad=""/>
+  <Exchange K1="2" Subs1="HCl" K12="" K2="" Subs2="FeS" K22="" Katalizator="" K3="" Subs3="FeCl2" K32="" Subs3Ad="" K4="" Subs4="H2S" K42="" Subs4Ad="↑"/>
+  <Exchange K1="2" Subs1="H2S" K12="" K2="3" Subs2="O" K22="2" Katalizator="" K3="2" Subs3="SO2" K32="" Subs3Ad="" K4="2" Subs4="H2O" K42="" Subs4Ad=""/>
+  <Exchange K1="2" Subs1="CaO" K12="" K2="2" Subs2="HCL" K22="" Katalizator="" K3="" Subs3="CaCL2" K32="" Subs3Ad="" K4="" Subs4="H2O" K42="" Subs4Ad=""/>
+  <Exchange K1="2" Subs1="BaO" K12="" K2="2" Subs2="HCL" K22="" Katalizator="" K3="" Subs3="BaCL2" K32="" Subs3Ad="" K4="" Subs4="H2O" K42="" Subs4Ad=""/>
+  <Exchange K1="2" Subs1="BaO" K12="" K2="2" Subs2="H2SO4" K22="" Katalizator="" K3="" Subs3="BaSO4" K32="" Subs3Ad="↓" K4="" Subs4="H2O" K42="" Subs4Ad=""/>
+  <Exchange K1="" Subs1="SiO2" K12="" K2="4" Subs2="NaOH" K22="" Katalizator="" K3="" Subs3="Na4SiO4" K32="" Subs3Ad="" K4="2" Subs4="H2O" K42="" Subs4Ad=""/>
+  <Exchange K1="" Subs1="Na4SiO4" K12="" K2="2" Subs2="CO2" K22="" Katalizator="" K3="" Subs3="Na2CO3" K32="" Subs3Ad="" K4="2" Subs4="SiO2" K42="" Subs4Ad="↓"/>
+  <Exchange K1="" Subs1="SiO2" K12="" K2="4" Subs2="HF" K22="" Katalizator="" K3="" Subs3="SiF4" K32="" Subs3Ad="" K4="2" Subs4="H2O" K42="" Subs4Ad=""/>
+  <Exchange K1="" Subs1="LiO2" K12="" K2="2" Subs2="HCL" K22="" Katalizator="" K3="2" Subs3="LiCl" K32="" Subs3Ad="" K4="" Subs4="H2O" K42="" Subs4Ad=""/>
+  <Exchange K1="2" Subs1="Li(OH)" K12="" K2="" Subs2="CO2" K22="" Katalizator="" K3="2" Subs3="Li2CO3" K32="" Subs3Ad="" K4="" Subs4="H2O" K42="" Subs4Ad=""/>
+  <Exchange K1="2" Subs1="Li2SO4" K12="" K2="" Subs2="Na2CO3" K22="" Katalizator="100 ⁰C" K3="" Subs3="Li2CO3" K32="" Subs3Ad="" K4="" Subs4="Na2SO4" K42="" Subs4Ad=""/>
+  <Exchange K1="" Subs1="NiO" K12="" K2="2" Subs2="HCL" K22="" Katalizator="" K3="" Subs3="NiCL2" K32="" Subs3Ad="" K4="" Subs4="H2O" K42="" Subs4Ad=""/>
+  <Exchange K1="" Subs1="CuO" K12="" K2="2" Subs2="HNO3" K22="" Katalizator="" K3="" Subs3="Cu(NO3)2" K32="" Subs3Ad="" K4="" Subs4="H2O" K42="" Subs4Ad=""/>
+  <Exchange K1="" Subs1="Na2O" K12="" K2="2" Subs2="HCL" K22="" Katalizator="" K3="2" Subs3="NaCl" K32="" Subs3Ad="" K4="" Subs4="H2O" K42="" Subs4Ad=""/>
+  <Exchange K1="" Subs1="Fe2O3" K12="" K2="6" Subs2="HCL" K22="" Katalizator="" K3="2" Subs3="FeCl3" K32="" Subs3Ad="" K4="3" Subs4="H2O" K42="" Subs4Ad=""/>
+  <Exchange K1="" Subs1="Fe2O3" K12="" K2="6" Subs2="HCL" K22="" Katalizator="" K3="2" Subs3="FeCl3" K32="" Subs3Ad="" K4="3" Subs4="H2O" K42="" Subs4Ad=""/>
+  <Exchange K1="" Subs1="FeO(OH)" K12="" K2="3" Subs2="HCL" K22="" Katalizator="" K3="" Subs3="FeCl3" K32="" Subs3Ad="" K4="2" Subs4="H2O" K42="" Subs4Ad=""/>
+  <Exchange K1="" Subs1="NaFeO2" K12="" K2="" Subs2="H2O" K22="" Katalizator="100 ⁰C" K3="" Subs3="FeO(OH)" K32="" Subs3Ad="↓" K4="" Subs4="NaOH" K42="" Subs4Ad=""/>
+  <Exchange K1="" Subs1="Fe2O3" K12="" K2="" Subs2="Na2CO3" K22="" Katalizator="" K3="2" Subs3="NaFeO2" K32="" Subs3Ad="" K4="" Subs4="CO2" K42="" Subs4Ad=""/>
+  <Exchange K1="" Subs1="Fe2O3" K12="" K2="2" Subs2="NaOH" K22="" Katalizator="" K3="2" Subs3="NaFeO2" K32="" Subs3Ad="" K4="" Subs4="H2O" K42="" Subs4Ad=""/>
+  <Exchange K1="" Subs1="FeO" K12="" K2="" Subs2="H2S" K22="" Katalizator="500 ⁰C" K3="" Subs3="FeS" K32="" Subs3Ad="" K4="" Subs4="H2O" K42="" Subs4Ad=""/>
+  
+  
+  
+  <!-- ЗАМЕЩЕНИЕ -->
+  <Substitution K1="" Subs1="Pb(NO3)2" K12="" K2="" Subs2="Zn" K22="" Katalizator="" K3="" Subs3="Zn(NO3)2" K32="" Subs3Ad="" K4="" Subs4="Pb" K42="" Subs4Ad=""/>
+  <Substitution K1="2" Subs1="NaBr" K12="" K2="" Subs2="Cl" K22="2" Katalizator="" K3="" Subs3="Br" K32="2" Subs3Ad="" K4="2" Subs4="NaCl" K42="" Subs4Ad=""/>
+  <Substitution K1="2" Subs1="Al" K12="" K2="6" Subs2="HCl" K22="" Katalizator="" K3="2" Subs3="AlCl3" K32="" Subs3Ad="" K4="3" Subs4="H" K42="2" Subs4Ad="↑"/>
+  <Substitution K1="" Subs1="Mg" K12="" K2="2" Subs2="HCl" K22="" Katalizator="" K3="" Subs3="MgCl2" K32="" Subs3Ad="" K4="" Subs4="H" K42="2" Subs4Ad="↑"/>
+  <Substitution K1="2" Subs1="Li" K12="" K2="2" Subs2="H2O" K22="" Katalizator="" K3="2" Subs3="LiOH" K32="" Subs3Ad="" K4="" Subs4="H" K42="2" Subs4Ad="↑"/>
+  <Substitution K1="" Subs1="Li2O" K12="" K2="" Subs2="Mg" K22="" Katalizator="800 ⁰C" K3="2" Subs3="Li" K32="" Subs3Ad="" K4="" Subs4="MgO" K42="" Subs4Ad=""/>
+  <Substitution K1="2" Subs1="Li2O" K12="" K2="" Subs2="Si" K22="" Katalizator="1000 ⁰C" K3="4" Subs3="Li" K32="" Subs3Ad="" K4="" Subs4="SiO2" K42="" Subs4Ad=""/>
+  <Substitution K1="" Subs1="NiO" K12="" K2="" Subs2="H" K22="2" Katalizator="200-400 ⁰C" K3="" Subs3="Ni" K32="" Subs3Ad="" K4="" Subs4="H2O" K42="" Subs4Ad=""/>
+  <Substitution K1="" Subs1="CuO" K12="" K2="" Subs2="H" K22="2" Katalizator="" K3="" Subs3="Cu" K32="" Subs3Ad="" K4="" Subs4="H2O" K42="" Subs4Ad=""/>
+  <Substitution K1="2" Subs1="CuO" K12="" K2="" Subs2="C" K22="2" Katalizator="" K3="2" Subs3="Cu" K32="" Subs3Ad="" K4="" Subs4="CO2" K42="" Subs4Ad=""/>
+  <Substitution K1="10" Subs1="Na" K12="" K2="2" Subs2="NaNO3" K22="" Katalizator="" K3="6" Subs3="Na2O" K32="" Subs3Ad="" K4="" Subs4="N" K42="2" Subs4Ad="↑"/>
+  <Substitution K1="3" Subs1="Fe" K12="" K2="4" Subs2="H2O" K22="" Katalizator="800 ⁰C" K3="" Subs3="Fe3O4" K32="" Subs3Ad="" K4="4" Subs4="H2O" K42="" Subs4Ad=""/>
+  <Substitution K1="3" Subs1="Fe2O3" K12="" K2="" Subs2="H" K22="2" Katalizator="400 ⁰C" K3="2" Subs3="Fe3O4" K32="" Subs3Ad="" K4="" Subs4="H2O" K42="" Subs4Ad=""/>
+  <Substitution K1="" Subs1="Fe3O4" K12="" K2="4" Subs2="H" K22="2" Katalizator="1000 ⁰C" K3="3" Subs3="Fe" K32="" Subs3Ad="" K4="4" Subs4="H2O" K42="" Subs4Ad=""/>
+  <Substitution K1="" Subs1="Fe3O4" K12="" K2="4" Subs2="CO" K22="" Katalizator="700 ⁰C" K3="3" Subs3="Fe" K32="" Subs3Ad="" K4="4" Subs4="CO2" K42="" Subs4Ad=""/>
+  <Substitution K1="2" Subs1="FeO(OH)" K12="" K2="3" Subs2="H" K22="2" Katalizator="" K3="2" Subs3="Fe" K32="" Subs3Ad="" K4="4" Subs4="H2O" K42="" Subs4Ad=""/>
+  <Substitution K1="" Subs1="Fe2O3" K12="" K2="3" Subs2="H" K22="2" Katalizator="100 ⁰C" K3="2" Subs3="Fe" K32="" Subs3Ad="" K4="3" Subs4="H2O" K42="" Subs4Ad=""/>
+  <Substitution K1="" Subs1="FeO" K12="" K2="" Subs2="H" K22="2" Katalizator="350 ⁰C" K3="" Subs3="Fe" K32="" Subs3Ad="" K4="" Subs4="H2O" K42="" Subs4Ad=""/>
+  <Substitution K1="" Subs1="FeO" K12="" K2="" Subs2="C" K22="" Katalizator=">1000 ⁰C" K3="" Subs3="Fe" K32="" Subs3Ad="" K4="" Subs4="CO" K42="" Subs4Ad="↑"/>
+</Reactions>

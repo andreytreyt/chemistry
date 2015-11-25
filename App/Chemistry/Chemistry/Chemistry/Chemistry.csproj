@@ -1,0 +1,545 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7B4106CE-7E7C-4BCB-BBB0-71DB794B154A}</ProjectGuid>
+    <ProjectTypeGuids>{C089C8C0-30E0-4E22-80C0-CE093F111A43};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Chemistry</RootNamespace>
+    <AssemblyName>Chemistry</AssemblyName>
+    <TargetFrameworkVersion>v8.0</TargetFrameworkVersion>
+    <SilverlightVersion>
+    </SilverlightVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <TargetFrameworkIdentifier>WindowsPhone</TargetFrameworkIdentifier>
+    <SilverlightApplication>true</SilverlightApplication>
+    <SupportedCultures>ru%3bes%3ben-US</SupportedCultures>
+    <XapOutputs>true</XapOutputs>
+    <GenerateSilverlightManifest>true</GenerateSilverlightManifest>
+    <XapFilename>Chemistry_$(Configuration)_$(Platform).xap</XapFilename>
+    <SilverlightManifestTemplate>Properties\AppManifest.xml</SilverlightManifestTemplate>
+    <SilverlightAppEntry>Chemistry.App</SilverlightAppEntry>
+    <ValidateXaml>true</ValidateXaml>
+    <ThrowErrorsInValidation>true</ThrowErrorsInValidation>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <MinimumVisualStudioVersion>11.0</MinimumVisualStudioVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <PlatformTarget />
+    <OutputPath>Bin\x86\Debug</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <PlatformTarget />
+    <OutputPath>Bin\x86\Release</OutputPath>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
+    <PlatformTarget />
+    <OutputPath>Bin\ARM\Debug</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM'">
+    <PlatformTarget />
+    <OutputPath>Bin\ARM\Release</OutputPath>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="JeffWilcox.PhoneThemeManager">
+      <HintPath>..\..\packages\PhoneThemeManager.2.1\lib\windowsphone8\JeffWilcox.PhoneThemeManager.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Phone.Controls, Version=8.0.0.0, Culture=neutral, PublicKeyToken=24eec0d8c86cda1e, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Phone.Controls.Maps, Version=8.0.0.0, Culture=neutral, PublicKeyToken=24eec0d8c86cda1e, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Phone.Controls.Toolkit">
+      <HintPath>..\..\packages\WPtoolkit.4.2013.08.16\lib\sl4-windowsphone71\Microsoft.Phone.Controls.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Threading.Tasks">
+      <HintPath>..\..\packages\Microsoft.Bcl.Async.1.0.165\lib\sl4-windowsphone71\Microsoft.Threading.Tasks.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Threading.Tasks.Extensions">
+      <HintPath>..\..\packages\Microsoft.Bcl.Async.1.0.165\lib\sl4-windowsphone71\Microsoft.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Threading.Tasks.Extensions.Phone">
+      <HintPath>..\..\packages\Microsoft.Bcl.Async.1.0.165\lib\sl4-windowsphone71\Microsoft.Threading.Tasks.Extensions.Phone.dll</HintPath>
+    </Reference>
+    <Reference Include="Yandex.Metrica">
+      <HintPath>..\..\packages\Yandex.Metrica.1.0.5050.55\lib\wp71\Yandex.Metrica.dll</HintPath>
+    </Reference>
+    <Reference Include="Zlib.Portable">
+      <HintPath>..\..\packages\Zlib.Portable.1.9.2\lib\portable-net4+sl4+wp71+win8\Zlib.Portable.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\ElementTile.xaml.cs">
+      <DependentUpon>ElementTile.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Common\LanguagePicker.xaml.cs">
+      <DependentUpon>LanguagePicker.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Common\PhoneApplicationPage.cs" />
+    <Compile Include="Common\UpperConverter.cs" />
+    <Compile Include="Data\ChemistryDataContext.cs" />
+    <Compile Include="Data\Database.cs" />
+    <Compile Include="Models\Test.cs" />
+    <Compile Include="Models\Element.cs" />
+    <Compile Include="Models\IComponents.cs" />
+    <Compile Include="Models\Reactions\Compound.cs" />
+    <Compile Include="Models\Reactions\Decomposition.cs" />
+    <Compile Include="Models\Reactions\Exchange.cs" />
+    <Compile Include="Models\Reactions\Substitution.cs" />
+    <Compile Include="Models\Substance.cs" />
+    <Compile Include="Resources\AppResources.Designer.cs">
+      <DependentUpon>AppResources.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resources\LocalizedStrings.cs" />
+    <Compile Include="Services\Language.cs" />
+    <Compile Include="Services\Storage.cs" />
+    <Compile Include="ViewModels\Settings.cs" />
+    <Compile Include="Views\ReactionResults\SubstitutionPage.xaml.cs">
+      <DependentUpon>SubstitutionPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ReactionResults\DecompositionPage.xaml.cs">
+      <DependentUpon>DecompositionPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ReactionResults\ExchangePage.xaml.cs">
+      <DependentUpon>ExchangePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SettingsPage.xaml.cs">
+      <DependentUpon>SettingsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SolubilityPage.xaml.cs">
+      <DependentUpon>SolubilityPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\TestsPage.xaml.cs">
+      <DependentUpon>TestsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ElementPage.xaml.cs">
+      <DependentUpon>ElementPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ElementsPage.xaml.cs">
+      <DependentUpon>ElementsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\ReactionResults\CompoundPage.xaml.cs">
+      <DependentUpon>CompoundPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ReactionsPage.xaml.cs">
+      <DependentUpon>ReactionsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SubstancePage.xaml.cs">
+      <DependentUpon>SubstancePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SubstancesPage.xaml.cs">
+      <DependentUpon>SubstancesPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PeriodicPage.xaml.cs">
+      <DependentUpon>PeriodicPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\TestPage.xaml.cs">
+      <DependentUpon>TestPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Common\Helper.cs" />
+    <Compile Include="Common\Tests.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="Common\ElementTile.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Common\LanguagePicker.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\ReactionResults\SubstitutionPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\ReactionResults\DecompositionPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\ReactionResults\ExchangePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\SettingsPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\SolubilityPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\TestsPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\ElementPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\ElementsPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\ReactionResults\CompoundPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\ReactionsPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\SubstancePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\SubstancesPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\PeriodicPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\TestPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\AppTile.Large.png" />
+    <Content Include="Languages\AppResLib.dll.0401.mui" />
+    <Content Include="Languages\AppResLib.dll.0402.mui" />
+    <Content Include="Languages\AppResLib.dll.0403.mui" />
+    <Content Include="Languages\AppResLib.dll.0404.mui" />
+    <Content Include="Languages\AppResLib.dll.0405.mui" />
+    <Content Include="Languages\AppResLib.dll.0406.mui" />
+    <Content Include="Languages\AppResLib.dll.0407.mui" />
+    <Content Include="Languages\AppResLib.dll.0408.mui" />
+    <Content Include="Languages\AppResLib.dll.0409.mui" />
+    <Content Include="Languages\AppResLib.dll.040B.mui" />
+    <Content Include="Languages\AppResLib.dll.040c.mui" />
+    <Content Include="Languages\AppResLib.dll.040D.mui" />
+    <Content Include="Languages\AppResLib.dll.040E.mui" />
+    <Content Include="Languages\AppResLib.dll.0410.mui" />
+    <Content Include="Languages\AppResLib.dll.0411.mui" />
+    <Content Include="Languages\AppResLib.dll.0412.mui" />
+    <Content Include="Languages\AppResLib.dll.0413.mui" />
+    <Content Include="Languages\AppResLib.dll.0414.mui" />
+    <Content Include="Languages\AppResLib.dll.0415.mui" />
+    <Content Include="Languages\AppResLib.dll.0416.mui" />
+    <Content Include="Languages\AppResLib.dll.0418.mui" />
+    <Content Include="Languages\AppResLib.dll.0419.mui" />
+    <Content Include="Languages\AppResLib.dll.041A.mui" />
+    <Content Include="Languages\AppResLib.dll.041B.mui" />
+    <Content Include="Languages\AppResLib.dll.041C.mui" />
+    <Content Include="Languages\AppResLib.dll.041D.mui" />
+    <Content Include="Languages\AppResLib.dll.041E.mui" />
+    <Content Include="Languages\AppResLib.dll.041F.mui" />
+    <Content Include="Languages\AppResLib.dll.0421.mui" />
+    <Content Include="Languages\AppResLib.dll.0422.mui" />
+    <Content Include="Languages\AppResLib.dll.0423.mui" />
+    <Content Include="Languages\AppResLib.dll.0424.mui" />
+    <Content Include="Languages\AppResLib.dll.0425.mui" />
+    <Content Include="Languages\AppResLib.dll.0426.mui" />
+    <Content Include="Languages\AppResLib.dll.0427.mui" />
+    <Content Include="Languages\AppResLib.dll.0429.mui" />
+    <Content Include="Languages\AppResLib.dll.042A.mui" />
+    <Content Include="Languages\AppResLib.dll.042C.mui" />
+    <Content Include="Languages\AppResLib.dll.042F.mui" />
+    <Content Include="Languages\AppResLib.dll.0439.mui" />
+    <Content Include="Languages\AppResLib.dll.043e.mui" />
+    <Content Include="Languages\AppResLib.dll.043F.mui" />
+    <Content Include="Languages\AppResLib.dll.0443.mui" />
+    <Content Include="Languages\AppResLib.dll.0464.mui" />
+    <Content Include="Languages\AppResLib.dll.0804.mui" />
+    <Content Include="Languages\AppResLib.dll.0809.mui" />
+    <Content Include="Languages\AppResLib.dll.080A.mui" />
+    <Content Include="Languages\AppResLib.dll.0816.mui" />
+    <Content Include="Languages\AppResLib.dll.081A.mui" />
+    <Content Include="Languages\AppResLib.dll.0c0a.mui" />
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\AppManifest.xml" />
+    <None Include="Properties\WMAppManifest.xml">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\ApplicationIcon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\AppTile.png" />
+    <Content Include="Assets\Icons\test.png" />
+    <Content Include="Assets\Icons\model.png" />
+    <Content Include="Assets\Icons\next.png" />
+    <Content Include="Assets\Icons\ok.png" />
+    <Content Include="Assets\Icons\previous.png" />
+    <Content Include="Assets\Icons\reaction.png" />
+    <Content Include="Assets\Icons\substance.png" />
+    <Content Include="Assets\Icons\table.png" />
+    <Content Include="Assets\radiation.png" />
+    <Content Include="Assets\Background.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Logo.png" />
+    <Content Include="Data\Images\Elements\Ac.jpg" />
+    <Content Include="Data\Images\Elements\Ag.jpg" />
+    <Content Include="Data\Images\Elements\Al.jpg" />
+    <Content Include="Data\Images\Elements\Am.jpg" />
+    <Content Include="Data\Images\Elements\Ar.jpg" />
+    <Content Include="Data\Images\Elements\As.jpg" />
+    <Content Include="Data\Images\Elements\At.jpg" />
+    <Content Include="Data\Images\Elements\Au.jpg" />
+    <Content Include="Data\Images\Elements\B.jpg" />
+    <Content Include="Data\Images\Elements\Ba.jpg" />
+    <Content Include="Data\Images\Elements\Be.jpg" />
+    <Content Include="Data\Images\Elements\Bi.jpg" />
+    <Content Include="Data\Images\Elements\Bk.jpg" />
+    <Content Include="Data\Images\Elements\Br.jpg" />
+    <Content Include="Data\Images\Elements\C.jpg" />
+    <Content Include="Data\Images\Elements\Ca.jpg" />
+    <Content Include="Data\Images\Elements\Cd.jpg" />
+    <Content Include="Data\Images\Elements\Ce.jpg" />
+    <Content Include="Data\Images\Elements\Cf.jpg" />
+    <Content Include="Data\Images\Elements\Cl.jpg" />
+    <Content Include="Data\Images\Elements\Cm.jpg" />
+    <Content Include="Data\Images\Elements\Co.jpg" />
+    <Content Include="Data\Images\Elements\Cr.jpg" />
+    <Content Include="Data\Images\Elements\Cs.jpg" />
+    <Content Include="Data\Images\Elements\Cu.jpg" />
+    <Content Include="Data\Images\Elements\Dy.jpg" />
+    <Content Include="Data\Images\Elements\Er.jpg" />
+    <Content Include="Data\Images\Elements\Es.jpg" />
+    <Content Include="Data\Images\Elements\Eu.jpg" />
+    <Content Include="Data\Images\Elements\F.jpg" />
+    <Content Include="Data\Images\Elements\Fe.jpg" />
+    <Content Include="Data\Images\Elements\Fm.jpg" />
+    <Content Include="Data\Images\Elements\Fr.jpg" />
+    <Content Include="Data\Images\Elements\Ga.jpg" />
+    <Content Include="Data\Images\Elements\Gd.jpg" />
+    <Content Include="Data\Images\Elements\Ge.jpg" />
+    <Content Include="Data\Images\Elements\H.jpg" />
+    <Content Include="Data\Images\Elements\He.jpg" />
+    <Content Include="Data\Images\Elements\Hf.jpg" />
+    <Content Include="Data\Images\Elements\Hg.jpg" />
+    <Content Include="Data\Images\Elements\Ho.jpg" />
+    <Content Include="Data\Images\Elements\I.jpg" />
+    <Content Include="Data\Images\Elements\In.jpg" />
+    <Content Include="Data\Images\Elements\Ir.jpg" />
+    <Content Include="Data\Images\Elements\K.jpg" />
+    <Content Include="Data\Images\Elements\Kr.jpg" />
+    <Content Include="Data\Images\Elements\La.jpg" />
+    <Content Include="Data\Images\Elements\Li.jpg" />
+    <Content Include="Data\Images\Elements\Lr.jpg" />
+    <Content Include="Data\Images\Elements\Lu.jpg" />
+    <Content Include="Data\Images\Elements\Md.jpg" />
+    <Content Include="Data\Images\Elements\Mg.jpg" />
+    <Content Include="Data\Images\Elements\Mn.jpg" />
+    <Content Include="Data\Images\Elements\Mo.jpg" />
+    <Content Include="Data\Images\Elements\N.jpg" />
+    <Content Include="Data\Images\Elements\Na.jpg" />
+    <Content Include="Data\Images\Elements\Nb.jpg" />
+    <Content Include="Data\Images\Elements\Nd.jpg" />
+    <Content Include="Data\Images\Elements\Ne.jpg" />
+    <Content Include="Data\Images\Elements\Ni.jpg" />
+    <Content Include="Data\Images\Elements\No.jpg" />
+    <Content Include="Data\Images\Elements\Np.jpg" />
+    <Content Include="Data\Images\Elements\O.jpg" />
+    <Content Include="Data\Images\Elements\Os.jpg" />
+    <Content Include="Data\Images\Elements\P.jpg" />
+    <Content Include="Data\Images\Elements\Pa.jpg" />
+    <Content Include="Data\Images\Elements\Pb.jpg" />
+    <Content Include="Data\Images\Elements\Pd.jpg" />
+    <Content Include="Data\Images\Elements\Pm.jpg" />
+    <Content Include="Data\Images\Elements\Po.jpg" />
+    <Content Include="Data\Images\Elements\Pr.jpg" />
+    <Content Include="Data\Images\Elements\Pt.jpg" />
+    <Content Include="Data\Images\Elements\Pu.jpg" />
+    <Content Include="Data\Images\Elements\Ra.jpg" />
+    <Content Include="Data\Images\Elements\Rb.jpg" />
+    <Content Include="Data\Images\Elements\Re.jpg" />
+    <Content Include="Data\Images\Elements\Rh.jpg" />
+    <Content Include="Data\Images\Elements\Ru.jpg" />
+    <Content Include="Data\Images\Elements\S.jpg" />
+    <Content Include="Data\Images\Elements\Sb.jpg" />
+    <Content Include="Data\Images\Elements\Sc.jpg" />
+    <Content Include="Data\Images\Elements\Se.jpg" />
+    <Content Include="Data\Images\Elements\Si.jpg" />
+    <Content Include="Data\Images\Elements\Sm.jpg" />
+    <Content Include="Data\Images\Elements\Sn.jpg" />
+    <Content Include="Data\Images\Elements\Sr.jpg" />
+    <Content Include="Data\Images\Elements\Ta.jpg" />
+    <Content Include="Data\Images\Elements\Tb.jpg" />
+    <Content Include="Data\Images\Elements\Tc.jpg" />
+    <Content Include="Data\Images\Elements\Te.jpg" />
+    <Content Include="Data\Images\Elements\Th.jpg" />
+    <Content Include="Data\Images\Elements\Ti.jpg" />
+    <Content Include="Data\Images\Elements\Tl.jpg" />
+    <Content Include="Data\Images\Elements\Tm.jpg" />
+    <Content Include="Data\Images\Elements\U.jpg" />
+    <Content Include="Data\Images\Elements\V.jpg" />
+    <Content Include="Data\Images\Elements\W.jpg" />
+    <Content Include="Data\Images\Elements\Xe.jpg" />
+    <Content Include="Data\Images\Elements\Y.jpg" />
+    <Content Include="Data\Images\Elements\Yb.jpg" />
+    <Content Include="Data\Images\Elements\Zn.jpg" />
+    <Content Include="Data\Images\Elements\Zr.jpg" />
+    <Content Include="Data\Xml\Elements\Elements_es.xml" />
+    <Content Include="Data\Xml\Substances\Substances_es.xml" />
+    <Content Include="Data\Xml\Tests\Tests_es.xml" />
+    <Content Include="Data\Xml\Tests\Tests_en.xml" />
+    <Content Include="Data\Xml\Tests\Tests_ru.xml" />
+    <Content Include="Data\Xml\Elements\Elements_en.xml" />
+    <Content Include="Data\Xml\Elements\Elements_ru.xml" />
+    <Content Include="Data\Xml\Reactions\Reactions.xml" />
+    <Content Include="Data\Xml\Substances\Substances_en.xml" />
+    <Content Include="Data\Xml\Substances\Substances_ru.xml" />
+    <Content Include="Languages\AppResLib.dll" />
+    <Content Include="Models\READ_ME.TXT" />
+    <Content Include="SplashScreenImage.jpg" />
+    <Content Include="Toolkit.Content\ApplicationBar.Add.png" />
+    <Content Include="Toolkit.Content\ApplicationBar.Cancel.png" />
+    <Content Include="Toolkit.Content\ApplicationBar.Check.png" />
+    <Content Include="Toolkit.Content\ApplicationBar.Delete.png" />
+    <Content Include="Toolkit.Content\ApplicationBar.Select.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\AppResources.es.resx" />
+    <EmbeddedResource Include="Resources\AppResources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AppResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\AppResources.ru.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).$(TargetFrameworkVersion).Overrides.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions />
+  <Import Project="..\..\packages\Microsoft.Bcl.Build.1.0.10\tools\Microsoft.Bcl.Build.targets" Condition="Exists('..\..\packages\Microsoft.Bcl.Build.1.0.10\tools\Microsoft.Bcl.Build.targets')" />
+  <Target Name="EnsureBclBuildImported" BeforeTargets="BeforeBuild" Condition="'$(BclBuildImported)' == ''">
+    <Error Condition="!Exists('..\..\packages\Microsoft.Bcl.Build.1.0.10\tools\Microsoft.Bcl.Build.targets')" Text="This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=317567." HelpKeyword="BCLBUILD2001" />
+    <Error Condition="Exists('..\..\packages\Microsoft.Bcl.Build.1.0.10\tools\Microsoft.Bcl.Build.targets')" Text="The build restored NuGet packages. Build the project again to include these packages in the build. For more information, see http://go.microsoft.com/fwlink/?LinkID=317568." HelpKeyword="BCLBUILD2002" />
+  </Target>
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <Import Project="..\..\packages\Microsoft.Bcl.Build.1.0.13\tools\Microsoft.Bcl.Build.targets" Condition="Exists('..\..\packages\Microsoft.Bcl.Build.1.0.13\tools\Microsoft.Bcl.Build.targets')" />
+  <Target Name="EnsureBclBuildImported" BeforeTargets="BeforeBuild" Condition="'$(BclBuildImported)' == ''">
+    <Error Condition="!Exists('..\..\packages\Microsoft.Bcl.Build.1.0.13\tools\Microsoft.Bcl.Build.targets')" Text="This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=317567." HelpKeyword="BCLBUILD2001" />
+    <Error Condition="Exists('..\..\packages\Microsoft.Bcl.Build.1.0.13\tools\Microsoft.Bcl.Build.targets')" Text="The build restored NuGet packages. Build the project again to include these packages in the build. For more information, see http://go.microsoft.com/fwlink/?LinkID=317568." HelpKeyword="BCLBUILD2002" />
+  </Target>
+</Project>

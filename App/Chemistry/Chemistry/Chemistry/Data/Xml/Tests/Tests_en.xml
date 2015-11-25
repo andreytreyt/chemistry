@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Tests>
+  <Test>name of element based on ist designation</Test>
+  <Test>designation of element based on ist name</Test>
+  <Test>name of substance based on ist formula</Test>
+  <Test>missing substance</Test>
+</Tests>

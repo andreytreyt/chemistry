@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Tests>
+  <Test>nombre del elemento por designación</Test>
+  <Test>designación del elemento por nombre</Test>
+  <Test>el nombre de un compuesto de fórmula</Test>
+  <Test>carente de sustancia</Test>
+</Tests>

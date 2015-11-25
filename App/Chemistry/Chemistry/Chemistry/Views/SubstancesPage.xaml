@@ -1,0 +1,41 @@
+﻿<common:PhoneApplicationPage 
+    x:Class="Chemistry.Views.SubstancesPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:controls="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:common="clr-namespace:Chemistry.Common"
+    mc:Ignorable="d" d:DesignWidth="480" d:DesignHeight="768"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait"  Orientation="Portrait">
+
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0" Margin="12,0,0,8">
+            <TextBlock x:Name="PageTextBlock" Foreground="{StaticResource PhoneAccentBrush}" Margin="11,2,0,0"/>
+        </StackPanel>
+
+        <Grid x:Name="ContentPanel" Grid.Row="1">
+            <controls:Pivot x:Name="SubstancesPivot" ItemsSource="{Binding}">
+                <controls:Pivot.HeaderTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding Key}" Margin="0" Foreground="{StaticResource PhoneAccentBrush}" 
+                                   Style="{StaticResource PhoneTextExtraLargeStyle}"/>
+                    </DataTemplate>
+                </controls:Pivot.HeaderTemplate>
+                <controls:Pivot.ItemTemplate>
+                    <DataTemplate>
+                        <ContentControl Content="{Binding Value}" HorizontalContentAlignment="Left" VerticalContentAlignment="Top"/>
+                    </DataTemplate>
+                </controls:Pivot.ItemTemplate>
+            </controls:Pivot>
+        </Grid>
+    </Grid>
+</common:PhoneApplicationPage>

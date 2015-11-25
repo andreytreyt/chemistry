@@ -1,0 +1,13 @@
+Bin
+obj
+packages
+*.obj
+*.suo
+*.user
+*.db
+/App/Chemistry/Chemistry.sdf
+/App/Chemistry/ARM
+/App/Chemistry/Debug
+/App/Chemistry/ipch
+/App/Chemistry/Release
+/App/Chemistry/Chemistry.sln.ide

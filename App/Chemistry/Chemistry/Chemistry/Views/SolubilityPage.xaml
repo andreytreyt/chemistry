@@ -1,0 +1,416 @@
+﻿<common:PhoneApplicationPage
+    x:Class="Chemistry.Views.SolubilityPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:common="clr-namespace:Chemistry.Common"
+    xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait">
+
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+      
+        <StackPanel Grid.Row="0" Margin="12,0,0,8">
+            <TextBlock Text="{Binding Path=LocalizedResources.Tables, Source={StaticResource LocalizedStrings}, Converter={StaticResource UpperConverter}}" 
+                        Margin="11,2,0,0" Foreground="{StaticResource PhoneAccentBrush}" 
+                       Style="{StaticResource PhoneTextNormalStyle}"/>
+        </StackPanel>
+
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="6,0">
+            <ScrollViewer HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden">
+                <Grid x:Name="SolubleGrid">
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+
+                    <ListBoxItem Grid.Column="1" Grid.Row="0" Tag="H|+"></ListBoxItem>
+                    <ListBoxItem Grid.Column="2" Grid.Row="0" Tag="NH4|+"></ListBoxItem>
+                    <ListBoxItem Grid.Column="3" Grid.Row="0" Tag="K|+"></ListBoxItem>
+                    <ListBoxItem Grid.Column="4" Grid.Row="0" Tag="Na|+"></ListBoxItem>
+                    <ListBoxItem Grid.Column="5" Grid.Row="0" Tag="Ag|+"></ListBoxItem>
+                    <ListBoxItem Grid.Column="6" Grid.Row="0" Tag="Ba|2+"></ListBoxItem>
+                    <ListBoxItem Grid.Column="7" Grid.Row="0" Tag="Ca|2+"></ListBoxItem>
+                    <ListBoxItem Grid.Column="8" Grid.Row="0" Tag="Mg|2+"></ListBoxItem>
+                    <ListBoxItem Grid.Column="9" Grid.Row="0" Tag="Mn|2+"></ListBoxItem>
+                    <ListBoxItem Grid.Column="10" Grid.Row="0" Tag="Zn|2+"></ListBoxItem>
+                    <ListBoxItem Grid.Column="11" Grid.Row="0" Tag="Ni|2+"></ListBoxItem>
+                    <ListBoxItem Grid.Column="12" Grid.Row="0" Tag="Sn|2+"></ListBoxItem>
+                    <ListBoxItem Grid.Column="13" Grid.Row="0" Tag="Pb|2+"></ListBoxItem>
+                    <ListBoxItem Grid.Column="14" Grid.Row="0" Tag="Cu|2+"></ListBoxItem>
+                    <ListBoxItem Grid.Column="15" Grid.Row="0" Tag="Hg|2+"></ListBoxItem>
+                    <ListBoxItem Grid.Column="16" Grid.Row="0" Tag="Hg2|2+"></ListBoxItem>
+                    <ListBoxItem Grid.Column="17" Grid.Row="0" Tag="Fe|2+"></ListBoxItem>
+                    <ListBoxItem Grid.Column="18" Grid.Row="0" Tag="Fe|3+"></ListBoxItem>
+                    <ListBoxItem Grid.Column="19" Grid.Row="0" Tag="Al|3+"></ListBoxItem>
+                    <ListBoxItem Grid.Column="20" Grid.Row="0" Tag="Cr|3+"></ListBoxItem>
+
+                    <ListBoxItem Grid.Column="1" Grid.Row="14" Tag="H|+"></ListBoxItem>
+                    <ListBoxItem Grid.Column="2" Grid.Row="14" Tag="NH4|+"></ListBoxItem>
+                    <ListBoxItem Grid.Column="3" Grid.Row="14" Tag="K|+"></ListBoxItem>
+                    <ListBoxItem Grid.Column="4" Grid.Row="14" Tag="Na|+"></ListBoxItem>
+                    <ListBoxItem Grid.Column="5" Grid.Row="14" Tag="Ag|+"></ListBoxItem>
+                    <ListBoxItem Grid.Column="6" Grid.Row="14" Tag="Ba|2+"></ListBoxItem>
+                    <ListBoxItem Grid.Column="7" Grid.Row="14" Tag="Ca|2+"></ListBoxItem>
+                    <ListBoxItem Grid.Column="8" Grid.Row="14" Tag="Mg|2+"></ListBoxItem>
+                    <ListBoxItem Grid.Column="9" Grid.Row="14" Tag="Mn|2+"></ListBoxItem>
+                    <ListBoxItem Grid.Column="10" Grid.Row="14" Tag="Zn|2+"></ListBoxItem>
+                    <ListBoxItem Grid.Column="11" Grid.Row="14" Tag="Ni|2+"></ListBoxItem>
+                    <ListBoxItem Grid.Column="12" Grid.Row="14" Tag="Sn|2+"></ListBoxItem>
+                    <ListBoxItem Grid.Column="13" Grid.Row="14" Tag="Pb|2+"></ListBoxItem>
+                    <ListBoxItem Grid.Column="14" Grid.Row="14" Tag="Cu|2+"></ListBoxItem>
+                    <ListBoxItem Grid.Column="15" Grid.Row="14" Tag="Hg|2+"></ListBoxItem>
+                    <ListBoxItem Grid.Column="16" Grid.Row="14" Tag="Hg2|2+"></ListBoxItem>
+                    <ListBoxItem Grid.Column="17" Grid.Row="14" Tag="Fe|2+"></ListBoxItem>
+                    <ListBoxItem Grid.Column="18" Grid.Row="14" Tag="Fe|3+"></ListBoxItem>
+                    <ListBoxItem Grid.Column="19" Grid.Row="14" Tag="Al|3+"></ListBoxItem>
+                    <ListBoxItem Grid.Column="20" Grid.Row="14" Tag="Cr|3+"></ListBoxItem>
+
+                    <ListBoxItem Grid.Column="0" Grid.Row="1" Tag="OH|-"></ListBoxItem>
+                    <ListBoxItem Grid.Column="0" Grid.Row="2" Tag="NO3|-"></ListBoxItem>
+                    <ListBoxItem Grid.Column="0" Grid.Row="3" Tag="F|-"></ListBoxItem>
+                    <ListBoxItem Grid.Column="0" Grid.Row="4" Tag="Cl|-"></ListBoxItem>
+                    <ListBoxItem Grid.Column="0" Grid.Row="5" Tag="Br|-"></ListBoxItem>
+                    <ListBoxItem Grid.Column="0" Grid.Row="6" Tag="I|-"></ListBoxItem>
+                    <ListBoxItem Grid.Column="0" Grid.Row="7" Tag="S|2-"></ListBoxItem>
+                    <ListBoxItem Grid.Column="0" Grid.Row="8" Tag="SO3|2-"></ListBoxItem>
+                    <ListBoxItem Grid.Column="0" Grid.Row="9" Tag="SO4|2-"></ListBoxItem>
+                    <ListBoxItem Grid.Column="0" Grid.Row="10" Tag="CO3|2-"></ListBoxItem>
+                    <ListBoxItem Grid.Column="0" Grid.Row="11" Tag="SiO3|2-"></ListBoxItem>
+                    <ListBoxItem Grid.Column="0" Grid.Row="12" Tag="PO4|3-"></ListBoxItem>
+                    <ListBoxItem Grid.Column="0" Grid.Row="13" Tag="CH3COO|-"></ListBoxItem>
+
+                    <ListBoxItem Grid.Column="22" Grid.Row="1" Tag="OH|-"></ListBoxItem>
+                    <ListBoxItem Grid.Column="22" Grid.Row="2" Tag="NO3|-"></ListBoxItem>
+                    <ListBoxItem Grid.Column="22" Grid.Row="3" Tag="F|-"></ListBoxItem>
+                    <ListBoxItem Grid.Column="22" Grid.Row="4" Tag="Cl|-"></ListBoxItem>
+                    <ListBoxItem Grid.Column="22" Grid.Row="5" Tag="Br|-"></ListBoxItem>
+                    <ListBoxItem Grid.Column="22" Grid.Row="6" Tag="I|-"></ListBoxItem>
+                    <ListBoxItem Grid.Column="22" Grid.Row="7" Tag="S|2-"></ListBoxItem>
+                    <ListBoxItem Grid.Column="22" Grid.Row="8" Tag="SO3|2-"></ListBoxItem>
+                    <ListBoxItem Grid.Column="22" Grid.Row="9" Tag="SO4|2-"></ListBoxItem>
+                    <ListBoxItem Grid.Column="22" Grid.Row="10" Tag="CO3|2-"></ListBoxItem>
+                    <ListBoxItem Grid.Column="22" Grid.Row="11" Tag="SiO3|2-"></ListBoxItem>
+                    <ListBoxItem Grid.Column="22" Grid.Row="12" Tag="PO4|3-"></ListBoxItem>
+                    <ListBoxItem Grid.Column="22" Grid.Row="13" Tag="CH3COO|-"></ListBoxItem>
+
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="1" Grid.Row="1" Tag=""></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="2" Grid.Row="1" Tag="NH4OH|Р"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="3" Grid.Row="1" Tag="KOH|Р"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="4" Grid.Row="1" Tag="NaOH|Р"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="5" Grid.Row="1" Tag="Х"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="6" Grid.Row="1" Tag="Ba(OH)2|Р"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="7" Grid.Row="1" Tag="Ca(OH)2|М"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="8" Grid.Row="1" Tag="Mg(OH)2|М"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="9" Grid.Row="1" Tag="Mn(OH)2|Н"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="10" Grid.Row="1" Tag="Zn(OH)2|Н"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="11" Grid.Row="1" Tag="Ni(OH)2|Н"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="12" Grid.Row="1" Tag="Sn(OH)2|Н"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="13" Grid.Row="1" Tag="Pb(OH)2|Н"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="14" Grid.Row="1" Tag="Cu(OH)2|Н"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="15" Grid.Row="1" Tag="Х"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="16" Grid.Row="1" Tag="Х"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="17" Grid.Row="1" Tag="Fe(OH)2|Н"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="18" Grid.Row="1" Tag="Fe(OH)3|Н"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="19" Grid.Row="1" Tag="Al(OH)3|Н"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="20" Grid.Row="1" Tag="Cr(OH)3|Н"></ListBoxItem>
+
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="1" Grid.Row="2" Tag="HNO3|Р"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="2" Grid.Row="2" Tag="NH4NO3|Р"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="3" Grid.Row="2" Tag="KNO3|Р"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="4" Grid.Row="2" Tag="NaNO3|Р"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="5" Grid.Row="2" Tag="AgNO3|Р"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="6" Grid.Row="2" Tag="Ba(NO3)2|Р"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="7" Grid.Row="2" Tag="Ca(NO3)2|Р"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="8" Grid.Row="2" Tag="Mg(NO3)2|Р"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="9" Grid.Row="2" Tag="Mn(NO3)2|Р"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="10" Grid.Row="2" Tag="Zn(NO3)2|Р"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="11" Grid.Row="2" Tag="Ni(NO3)2|Р"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="12" Grid.Row="2" Tag="Sn(NO3)2|Р"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="13" Grid.Row="2" Tag="Pb(NO3)2|Р"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="14" Grid.Row="2" Tag="Cu(NO3)2|Р"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="15" Grid.Row="2" Tag="Hg(NO3)2|Р"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="16" Grid.Row="2" Tag="Х"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="17" Grid.Row="2" Tag="Fe(NO3)2|Р"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="18" Grid.Row="2" Tag="Fe(NO3)3|Р"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="19" Grid.Row="2" Tag="Al(NO3)3|Р"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="20" Grid.Row="2" Tag="Cr(NO3)3|Р"></ListBoxItem>
+
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="1" Grid.Row="3" Tag="HF|Р"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="2" Grid.Row="3" Tag="NH4F|Р"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="3" Grid.Row="3" Tag="KF|Р"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="4" Grid.Row="3" Tag="NaF|Р"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="5" Grid.Row="3" Tag="AgF|Р"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="6" Grid.Row="3" Tag="BaF2|М"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="7" Grid.Row="3" Tag="CaF2|Н"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="8" Grid.Row="3" Tag="MgF2|М"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="9" Grid.Row="3" Tag="MnF2|Р"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="10" Grid.Row="3" Tag="ZnF2|М"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="11" Grid.Row="3" Tag="NiF2|Р"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="12" Grid.Row="3" Tag="SnF2|Р"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="13" Grid.Row="3" Tag="PbF2|М"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="14" Grid.Row="3" Tag="CuF2|Р"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="15" Grid.Row="3" Tag="HgF2|Х"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="16" Grid.Row="3" Tag="Hg2F2|М"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="17" Grid.Row="3" Tag="FeF2|М"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="18" Grid.Row="3" Tag="FeF3|Н"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="19" Grid.Row="3" Tag="AlF3|М"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="20" Grid.Row="3" Tag="CrF3|М"></ListBoxItem>
+
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="1" Grid.Row="4" Tag="HCl|Р"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="2" Grid.Row="4" Tag="NH4Cl|Р"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="3" Grid.Row="4" Tag="KCl|Р"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="4" Grid.Row="4" Tag="NaCl|Р"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="5" Grid.Row="4" Tag="AgCl|Н"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="6" Grid.Row="4" Tag="BaCl2|Р"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="7" Grid.Row="4" Tag="CaCl2|Р"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="8" Grid.Row="4" Tag="MgCl2|Р"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="9" Grid.Row="4" Tag="MnCl2|Р"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="10" Grid.Row="4" Tag="ZnCl2|Р"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="11" Grid.Row="4" Tag="NiCl2|Р"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="12" Grid.Row="4" Tag="SnCl2|Р"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="13" Grid.Row="4" Tag="PbCl2|М"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="14" Grid.Row="4" Tag="CuCl2|Р"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="15" Grid.Row="4" Tag="HgCl2|Р"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="16" Grid.Row="4" Tag="Hg2Cl2|Н"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="17" Grid.Row="4" Tag="FeCl2|Р"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="18" Grid.Row="4" Tag="FeCl3|Р"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="19" Grid.Row="4" Tag="AlCl3|Р"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="20" Grid.Row="4" Tag="CrCl3|Р"></ListBoxItem>
+
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="1" Grid.Row="5" Tag="HBr|Р"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="2" Grid.Row="5" Tag="NH4Br|Р"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="3" Grid.Row="5" Tag="KBr|Р"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="4" Grid.Row="5" Tag="NaBr|Р"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="5" Grid.Row="5" Tag="AgBr|Н"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="6" Grid.Row="5" Tag="BaBr2|Р"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="7" Grid.Row="5" Tag="CaBr2|Р"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="8" Grid.Row="5" Tag="MgBr2|Р"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="9" Grid.Row="5" Tag="MnBr2|Р"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="10" Grid.Row="5" Tag="ZnBr2|Р"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="11" Grid.Row="5" Tag="NiBr2|Р"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="12" Grid.Row="5" Tag="SnBr2|Р"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="13" Grid.Row="5" Tag="PbBr2|М"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="14" Grid.Row="5" Tag="CuBr2|Р"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="15" Grid.Row="5" Tag="HgBr2|М"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="16" Grid.Row="5" Tag="Hg2Br2|Н"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="17" Grid.Row="5" Tag="FeBr2|Р"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="18" Grid.Row="5" Tag="FeBr3|Р"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="19" Grid.Row="5" Tag="AlBr3|Р"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="20" Grid.Row="5" Tag="CrBr3|Р"></ListBoxItem>
+
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="1" Grid.Row="6" Tag="HI|Р"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="2" Grid.Row="6" Tag="NH4I|Р"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="3" Grid.Row="6" Tag="KI|Р"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="4" Grid.Row="6" Tag="NaI|Р"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="5" Grid.Row="6" Tag="AgI|Н"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="6" Grid.Row="6" Tag="BaI2|Р"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="7" Grid.Row="6" Tag="CaI2|Р"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="8" Grid.Row="6" Tag="MgI2|Р"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="9" Grid.Row="6" Tag="MnI2|Р"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="10" Grid.Row="6" Tag="ZnI2|Р"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="11" Grid.Row="6" Tag="NiI2|Р"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="12" Grid.Row="6" Tag="SnI2|Р"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="13" Grid.Row="6" Tag="PbI2|Н"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="14" Grid.Row="6" Tag="Х"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="15" Grid.Row="6" Tag="HgI2|Н"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="16" Grid.Row="6" Tag="Hg2I2|Н"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="17" Grid.Row="6" Tag="FeI2|Р"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="18" Grid.Row="6" Tag="Х"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="19" Grid.Row="6" Tag="AlI3|Р"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="20" Grid.Row="6" Tag="CrI3|Р"></ListBoxItem>
+
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="1" Grid.Row="7" Tag="H2S|Р"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="2" Grid.Row="7" Tag="(NH4)2S|Р"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="3" Grid.Row="7" Tag="K2S|Р"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="4" Grid.Row="7" Tag="Na2S|Р"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="5" Grid.Row="7" Tag="Ag2S|Н"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="6" Grid.Row="7" Tag="Х"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="7" Grid.Row="7" Tag="Х"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="8" Grid.Row="7" Tag="Х"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="9" Grid.Row="7" Tag="MnS|Н"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="10" Grid.Row="7" Tag="ZnS|Н"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="11" Grid.Row="7" Tag="NiS|Н"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="12" Grid.Row="7" Tag="SnS|Н"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="13" Grid.Row="7" Tag="PbS|Н"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="14" Grid.Row="7" Tag="CuS|Н"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="15" Grid.Row="7" Tag="HgS|Н"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="16" Grid.Row="7" Tag="Hg2S|Н"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="17" Grid.Row="7" Tag="FeS|Н"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="18" Grid.Row="7" Tag="Fe2S3|Н"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="19" Grid.Row="7" Tag="Х"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="20" Grid.Row="7" Tag="Х"></ListBoxItem>
+
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="1" Grid.Row="8" Tag="H2SO3|Р"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="2" Grid.Row="8" Tag="(NH4)2SO3|Р"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="3" Grid.Row="8" Tag="K2SO3|Р"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="4" Grid.Row="8" Tag="Na2SO3|Р"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="5" Grid.Row="8" Tag="Ag2SO3|М"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="6" Grid.Row="8" Tag="BaSO3|М"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="7" Grid.Row="8" Tag="CaSO3|М"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="8" Grid.Row="8" Tag="MgSO3|М"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="9" Grid.Row="8" Tag="MnSO3|Н"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="10" Grid.Row="8" Tag="ZnSO3|М"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="11" Grid.Row="8" Tag="NiSO3|Н"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="12" Grid.Row="8" Tag="Х"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="13" Grid.Row="8" Tag="PbSO3|Н"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="14" Grid.Row="8" Tag="Х"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="15" Grid.Row="8" Tag="Х"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="16" Grid.Row="8" Tag="Х"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="17" Grid.Row="8" Tag="FeSO3|М"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="18" Grid.Row="8" Tag="Х"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="19" Grid.Row="8" Tag="Х"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="20" Grid.Row="8" Tag="Х"></ListBoxItem>
+
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="1" Grid.Row="9" Tag="H2SO4|Р"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="2" Grid.Row="9" Tag="(NH4)2SO4|Р"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="3" Grid.Row="9" Tag="K2SO4|Р"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="4" Grid.Row="9" Tag="Na2SO4|Р"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="5" Grid.Row="9" Tag="Ag2SO4|М"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="6" Grid.Row="9" Tag="BaSO4|Н"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="7" Grid.Row="9" Tag="CaSO4|М"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="8" Grid.Row="9" Tag="MgSO4|Р"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="9" Grid.Row="9" Tag="MnSO4|Р"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="10" Grid.Row="9" Tag="ZnSO4|Р"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="11" Grid.Row="9" Tag="NiSO4|Р"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="12" Grid.Row="9" Tag="SnSO4|Р"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="13" Grid.Row="9" Tag="PbSO4|Н"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="14" Grid.Row="9" Tag="CuSO4|Р"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="15" Grid.Row="9" Tag="HgSO4|Р"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="16" Grid.Row="9" Tag="Hg2SO4|М"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="17" Grid.Row="9" Tag="FeSO4|Р"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="18" Grid.Row="9" Tag="Fe2(SO4)3|Р"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="19" Grid.Row="9" Tag="Al2(SO4)3|Р"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="20" Grid.Row="9" Tag="Cr2(SO4)3|Р"></ListBoxItem>
+
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="1" Grid.Row="10" Tag="H2CO3|Р"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="2" Grid.Row="10" Tag="(NH4)2CO3|Р"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="3" Grid.Row="10" Tag="K2CO3|Р"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="4" Grid.Row="10" Tag="Na2CO3|Р"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="5" Grid.Row="10" Tag="Ag2CO3|Н"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="6" Grid.Row="10" Tag="BaCO3|Н"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="7" Grid.Row="10" Tag="CaCO3|Н"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="8" Grid.Row="10" Tag="MgCO3|Н"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="9" Grid.Row="10" Tag="MnCO3|Н"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="10" Grid.Row="10" Tag="ZnCO3|Н"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="11" Grid.Row="10" Tag="Х"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="12" Grid.Row="10" Tag="Х"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="13" Grid.Row="10" Tag="PbCO3|Н"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="14" Grid.Row="10" Tag="Х"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="15" Grid.Row="10" Tag="Х"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="16" Grid.Row="10" Tag="Hg2CO3|Н"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="17" Grid.Row="10" Tag="FeCO3|Н"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="18" Grid.Row="10" Tag="Х"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="19" Grid.Row="10" Tag="Х"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="20" Grid.Row="10" Tag="Х"></ListBoxItem>
+
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="1" Grid.Row="11" Tag="H2SiO3|Н"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="2" Grid.Row="11" Tag="Х"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="3" Grid.Row="11" Tag="K2SiO3|Р"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="4" Grid.Row="11" Tag="Na2SiO3|Р"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="5" Grid.Row="11" Tag="Ag2SiO3|Н"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="6" Grid.Row="11" Tag="BaSiO3|Н"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="7" Grid.Row="11" Tag="CaSiO3|Н"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="8" Grid.Row="11" Tag="MgSiO3|Н"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="9" Grid.Row="11" Tag="MnSiO3|Н"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="10" Grid.Row="11" Tag="ZnSiO3|Н"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="11" Grid.Row="11" Tag="NiSiO3|Н"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="12" Grid.Row="11" Tag="Х"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="13" Grid.Row="11" Tag="PbSiO3|Н"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="14" Grid.Row="11" Tag="Х"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="15" Grid.Row="11" Tag="Х"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="16" Grid.Row="11" Tag="Х"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="17" Grid.Row="11" Tag="FeSiO3|Н"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="18" Grid.Row="11" Tag="Х"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="19" Grid.Row="11" Tag="Х"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="20" Grid.Row="11" Tag="Х"></ListBoxItem>
+
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="1" Grid.Row="12" Tag="H3PO4|Р"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="2" Grid.Row="12" Tag="(NH4)3PO4|Р"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="3" Grid.Row="12" Tag="K3PO4|Р"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="4" Grid.Row="12" Tag="Na3PO4|Р"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="5" Grid.Row="12" Tag="Ag3PO4|Н"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="6" Grid.Row="12" Tag="Ba3(PO4)2|Н"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="7" Grid.Row="12" Tag="Ca3(PO4)2|Н"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="8" Grid.Row="12" Tag="Mg3(PO4)2|Н"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="9" Grid.Row="12" Tag="Mn3(PO4)2|Н"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="10" Grid.Row="12" Tag="Zn3(PO4)2|Н"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="11" Grid.Row="12" Tag="Ni3(PO4)2|Н"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="12" Grid.Row="12" Tag="Sn3(PO4)2|Н"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="13" Grid.Row="12" Tag="Pb3(PO4)2|Н"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="14" Grid.Row="12" Tag="Cu3(PO4)2|Н"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="15" Grid.Row="12" Tag="Hg3(PO4)2|Н"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="16" Grid.Row="12" Tag="(Hg2)3(PO4)2|Н"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="17" Grid.Row="12" Tag="Fe3(PO4)2|Н"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="18" Grid.Row="12" Tag="FePO4|Н"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="19" Grid.Row="12" Tag="AlPO4|Н"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="20" Grid.Row="12" Tag="CrPO4|Н"></ListBoxItem>
+
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="1" Grid.Row="13" Tag="Р"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="2" Grid.Row="13" Tag="Р"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="3" Grid.Row="13" Tag="Р"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="4" Grid.Row="13" Tag="Р"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="5" Grid.Row="13" Tag="Р"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="6" Grid.Row="13" Tag="Р"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="7" Grid.Row="13" Tag="Р"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="8" Grid.Row="13" Tag="Р"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="9" Grid.Row="13" Tag="Р"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="10" Grid.Row="13" Tag="Р"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="11" Grid.Row="13" Tag="Р"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="12" Grid.Row="13" Tag="Р"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="13" Grid.Row="13" Tag="Р"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="14" Grid.Row="13" Tag="Р"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="15" Grid.Row="13" Tag="Р"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="16" Grid.Row="13" Tag="М"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="17" Grid.Row="13" Tag="Р"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="18" Grid.Row="13" Tag="Р"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="19" Grid.Row="13" Tag="Р"></ListBoxItem>
+                    <ListBoxItem toolkit:TiltEffect.IsTiltEnabled="True" Grid.Column="20" Grid.Row="13" Tag="Р"></ListBoxItem>
+                </Grid>
+            </ScrollViewer>
+        </Grid>
+    </Grid>
+
+</common:PhoneApplicationPage>

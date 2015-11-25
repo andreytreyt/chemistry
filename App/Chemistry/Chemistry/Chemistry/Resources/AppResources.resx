@@ -1,0 +1,390 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Actinide" xml:space="preserve">
+    <value>actinide</value>
+  </data>
+  <data name="Actinides" xml:space="preserve">
+    <value>actinides</value>
+  </data>
+  <data name="Alkaline" xml:space="preserve">
+    <value>alkaline</value>
+  </data>
+  <data name="AlkalineEarth" xml:space="preserve">
+    <value>alkaline-earth</value>
+  </data>
+  <data name="Alkalines" xml:space="preserve">
+    <value>alkaline</value>
+  </data>
+  <data name="AlkalinesEarth" xml:space="preserve">
+    <value>alkaline-earth</value>
+  </data>
+  <data name="All" xml:space="preserve">
+    <value>all</value>
+  </data>
+  <data name="Answer" xml:space="preserve">
+    <value>answer</value>
+  </data>
+  <data name="Atomic" xml:space="preserve">
+    <value>atomic</value>
+  </data>
+  <data name="AtomicNumber" xml:space="preserve">
+    <value>atomic number</value>
+  </data>
+  <data name="BoilingPoint" xml:space="preserve">
+    <value>boiling point</value>
+  </data>
+  <data name="Chemical" xml:space="preserve">
+    <value>chemical</value>
+  </data>
+  <data name="Chemistry" xml:space="preserve">
+    <value>Chemistry</value>
+  </data>
+  <data name="Combine" xml:space="preserve">
+    <value>combine</value>
+  </data>
+  <data name="Complete" xml:space="preserve">
+    <value>complete</value>
+  </data>
+  <data name="Compound" xml:space="preserve">
+    <value>compound</value>
+  </data>
+  <data name="CovalentRadius" xml:space="preserve">
+    <value>covalent radius</value>
+  </data>
+  <data name="Decompose" xml:space="preserve">
+    <value>decompose</value>
+  </data>
+  <data name="Decomposition" xml:space="preserve">
+    <value>decomposition</value>
+  </data>
+  <data name="Density" xml:space="preserve">
+    <value>density at 0 ⁰C (273 К)</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>description</value>
+  </data>
+  <data name="Designation" xml:space="preserve">
+    <value>designation</value>
+  </data>
+  <data name="Electronegativity" xml:space="preserve">
+    <value>electronegativity</value>
+  </data>
+  <data name="Exchange" xml:space="preserve">
+    <value>exchange</value>
+  </data>
+  <data name="Exchanging" xml:space="preserve">
+    <value>exchange</value>
+  </data>
+  <data name="ExitFromTest" xml:space="preserve">
+    <value>Exit from test?</value>
+  </data>
+  <data name="False" xml:space="preserve">
+    <value>false</value>
+  </data>
+  <data name="FirstSubstance" xml:space="preserve">
+    <value>first substance</value>
+  </data>
+  <data name="Formula" xml:space="preserve">
+    <value>formula</value>
+  </data>
+  <data name="Group" xml:space="preserve">
+    <value>group</value>
+  </data>
+  <data name="Halogen" xml:space="preserve">
+    <value>halogen</value>
+  </data>
+  <data name="Halogens" xml:space="preserve">
+    <value>halogens</value>
+  </data>
+  <data name="HeatOfMelting" xml:space="preserve">
+    <value>heat of melting</value>
+  </data>
+  <data name="HeatOfVaporization" xml:space="preserve">
+    <value>heat of vaporization</value>
+  </data>
+  <data name="InertGas" xml:space="preserve">
+    <value>inert gas</value>
+  </data>
+  <data name="InertGases" xml:space="preserve">
+    <value>inert gases</value>
+  </data>
+  <data name="IonizationEnergy" xml:space="preserve">
+    <value>ionization energy</value>
+  </data>
+  <data name="IonRadius" xml:space="preserve">
+    <value>ion radius</value>
+  </data>
+  <data name="Language" xml:space="preserve">
+    <value>language</value>
+  </data>
+  <data name="Lanthanide" xml:space="preserve">
+    <value>lanthanide</value>
+  </data>
+  <data name="Lanthanides" xml:space="preserve">
+    <value>lanthanides</value>
+  </data>
+  <data name="MeltingPoint" xml:space="preserve">
+    <value>melting point</value>
+  </data>
+  <data name="Metals" xml:space="preserve">
+    <value>metals</value>
+  </data>
+  <data name="Model" xml:space="preserve">
+    <value>3D-model</value>
+  </data>
+  <data name="MolarHeatCapacity" xml:space="preserve">
+    <value>molar heat capacity</value>
+  </data>
+  <data name="MolarVolume" xml:space="preserve">
+    <value>molar volume</value>
+  </data>
+  <data name="MolecularWeight" xml:space="preserve">
+    <value>molecular weight</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>name</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>next</value>
+  </data>
+  <data name="NonMetal" xml:space="preserve">
+    <value>nonmetal</value>
+  </data>
+  <data name="NonMetals" xml:space="preserve">
+    <value>nonmetals</value>
+  </data>
+  <data name="OxidationDegree" xml:space="preserve">
+    <value>oxidation degree</value>
+  </data>
+  <data name="Periodic" xml:space="preserve">
+    <value>PERIODIC</value>
+  </data>
+  <data name="PostTransitional" xml:space="preserve">
+    <value>post transitional</value>
+  </data>
+  <data name="PostTransitionals" xml:space="preserve">
+    <value>post transitional</value>
+  </data>
+  <data name="Previous" xml:space="preserve">
+    <value>previous</value>
+  </data>
+  <data name="Properties" xml:space="preserve">
+    <value>properties</value>
+  </data>
+  <data name="Radius" xml:space="preserve">
+    <value>radius</value>
+  </data>
+  <data name="Rate" xml:space="preserve">
+    <value>rate and review</value>
+  </data>
+  <data name="Reactions" xml:space="preserve">
+    <value>reactions</value>
+  </data>
+  <data name="Restart" xml:space="preserve">
+    <value>you must restart the application</value>
+  </data>
+  <data name="Result" xml:space="preserve">
+    <value>result</value>
+  </data>
+  <data name="SecondSubstance" xml:space="preserve">
+    <value>second substance</value>
+  </data>
+  <data name="SemiMetal" xml:space="preserve">
+    <value>semimetal</value>
+  </data>
+  <data name="SemiMetals" xml:space="preserve">
+    <value>semimetals</value>
+  </data>
+  <data name="Settings" xml:space="preserve">
+    <value>settings</value>
+  </data>
+  <data name="Solubility" xml:space="preserve">
+    <value>SOLUBILITY</value>
+  </data>
+  <data name="Subgroup" xml:space="preserve">
+    <value>subgroup</value>
+  </data>
+  <data name="Substance" xml:space="preserve">
+    <value>substance</value>
+  </data>
+  <data name="Substances" xml:space="preserve">
+    <value>SUBSTANCES</value>
+  </data>
+  <data name="Substitute" xml:space="preserve">
+    <value>substitute</value>
+  </data>
+  <data name="Substitution" xml:space="preserve">
+    <value>substitution</value>
+  </data>
+  <data name="Tables" xml:space="preserve">
+    <value>tables</value>
+  </data>
+  <data name="Tests" xml:space="preserve">
+    <value>tests</value>
+  </data>
+  <data name="ThermalConductivity" xml:space="preserve">
+    <value>thermal conductivity</value>
+  </data>
+  <data name="Thermodinamical" xml:space="preserve">
+    <value>thermodinamical</value>
+  </data>
+  <data name="Time" xml:space="preserve">
+    <value>time</value>
+  </data>
+  <data name="Transitional" xml:space="preserve">
+    <value>transitional</value>
+  </data>
+  <data name="Transitionals" xml:space="preserve">
+    <value>transitional</value>
+  </data>
+  <data name="True" xml:space="preserve">
+    <value>true</value>
+  </data>
+  <data name="Type" xml:space="preserve">
+    <value>type</value>
+  </data>
+  <data name="UnlimitedPack" xml:space="preserve">
+    <value>unlimited pack</value>
+  </data>
+  <data name="Elements" xml:space="preserve">
+    <value>elements</value>
+  </data>
+  <data name="Test" xml:space="preserve">
+    <value>test</value>
+  </data>
+  <data name="And" xml:space="preserve">
+    <value>and</value>
+  </data>
+  <data name="MessageThanksForPurchase" xml:space="preserve">
+    <value>Thank you for your purchase.</value>
+  </data>
+  <data name="MessagePurchaseForReaction" xml:space="preserve">
+    <value>You must purchase the unlimited pack of the application to access this reaction.</value>
+  </data>
+  <data name="MessagePurchaseForTable" xml:space="preserve">
+    <value>You must purchase the unlimited pack of the application to access this table.</value>
+  </data>
+  <data name="MessagePurchaseForTest" xml:space="preserve">
+    <value>You must purchase the unlimited pack of the application to access this test.</value>
+  </data>
+  <data name="MessagePurchasePack" xml:space="preserve">
+    <value>Purchase the unlimited pack now?</value>
+  </data>
+</root>

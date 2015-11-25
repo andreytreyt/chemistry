@@ -1,0 +1,126 @@
+﻿<common:PhoneApplicationPage 
+    x:Class="Chemistry.Views.ElementPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:controls="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:common="clr-namespace:Chemistry.Common"
+    mc:Ignorable="d" d:DesignWidth="480" d:DesignHeight="768"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait"  Orientation="Portrait">
+
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0" Margin="12,0,0,8">
+            <TextBlock x:Name="ElementNameTextBlock" Foreground="{StaticResource PhoneAccentBrush}" Margin="11,2,0,0"/>
+        </StackPanel>
+
+        <Grid x:Name="ContentPanel" Grid.Row="1">
+            <controls:Pivot x:Name="ElementPivot" Foreground="{StaticResource PhoneAccentBrush}">
+                <controls:Pivot.Resources>
+                    <Style TargetType="ScrollViewer">
+                        <Setter Property="Margin" Value="0,0,-12,0"/>
+                    </Style>
+                </controls:Pivot.Resources>
+                
+                <controls:PivotItem>
+                    <controls:PivotItem.Header>
+                        <TextBlock Text="{Binding Path=LocalizedResources.Properties, Source={StaticResource LocalizedStrings}}"
+                                   Margin="0" Foreground="{StaticResource PhoneAccentBrush}" Style="{StaticResource PhoneTextExtraLargeStyle}"/>
+                    </controls:PivotItem.Header>
+                    <Grid>
+                        <ScrollViewer>
+                            <StackPanel>
+                                <TextBlock Text="{Binding Path=LocalizedResources.Atomic, Source={StaticResource LocalizedStrings}}" 
+                                   Style="{StaticResource PhoneTextGroupHeaderStyle}"/>
+                                <TextBlock Text="{Binding Path=LocalizedResources.Type, Source={StaticResource LocalizedStrings}}" 
+                                   Style="{StaticResource PhoneTextNormalStyle}"/>
+                                <TextBlock Text="{Binding Type}" Style="{StaticResource TextAccentStyle}"/>
+                                <TextBlock Text="{Binding Path=LocalizedResources.AtomicNumber, Source={StaticResource LocalizedStrings}}" 
+                                   Style="{StaticResource PhoneTextNormalStyle}"/>
+                                <TextBlock Text="{Binding Number}" Style="{StaticResource TextAccentStyle}"/>
+                                <TextBlock Text="{Binding Path=LocalizedResources.Designation, Source={StaticResource LocalizedStrings}}" 
+                                   Style="{StaticResource PhoneTextNormalStyle}"/>
+                                <TextBlock Text="{Binding Alias}" Style="{StaticResource TextAccentStyle}"/>
+                                <TextBlock Text="{Binding Path=LocalizedResources.MolecularWeight, Source={StaticResource LocalizedStrings}}" 
+                                   Style="{StaticResource PhoneTextNormalStyle}"/>
+                                <TextBlock Text="{Binding M}" Style="{StaticResource TextAccentStyle}"/>
+                                <TextBlock Text="{Binding Path=LocalizedResources.Radius, Source={StaticResource LocalizedStrings}}" 
+                                   Style="{StaticResource PhoneTextNormalStyle}"/>
+                                <TextBlock Text="{Binding Radius}" Style="{StaticResource TextAccentStyle}"/>
+
+                                <TextBlock Text="{Binding Path=LocalizedResources.Chemical, Source={StaticResource LocalizedStrings}}" 
+                                   Style="{StaticResource PhoneTextGroupHeaderStyle}"/>
+                                <TextBlock Text="{Binding Path=LocalizedResources.CovalentRadius, Source={StaticResource LocalizedStrings}}" 
+                                   Style="{StaticResource PhoneTextNormalStyle}"/>
+                                <TextBlock Text="{Binding KovRadius}" Style="{StaticResource TextAccentStyle}"/>
+                                <TextBlock Text="{Binding Path=LocalizedResources.IonRadius, Source={StaticResource LocalizedStrings}}" 
+                                   Style="{StaticResource PhoneTextNormalStyle}"/>
+                                <TextBlock Text="{Binding IonRadius}" Style="{StaticResource TextAccentStyle}"/>
+                                <TextBlock Text="{Binding Path=LocalizedResources.Electronegativity, Source={StaticResource LocalizedStrings}}" 
+                                   Style="{StaticResource PhoneTextNormalStyle}"/>
+                                <TextBlock Text="{Binding Electronegativity}" Style="{StaticResource TextAccentStyle}"/>
+                                <TextBlock Text="{Binding Path=LocalizedResources.OxidationDegree, Source={StaticResource LocalizedStrings}}" 
+                                   Style="{StaticResource PhoneTextNormalStyle}"/>
+                                <TextBlock Text="{Binding Oxidation}" Style="{StaticResource TextAccentStyle}"/>
+                                <TextBlock Text="{Binding Path=LocalizedResources.IonizationEnergy, Source={StaticResource LocalizedStrings}}" 
+                                   Style="{StaticResource PhoneTextNormalStyle}"/>
+                                <TextBlock Text="{Binding Energy}" Style="{StaticResource TextAccentStyle}"/>
+
+                                <TextBlock Text="{Binding Path=LocalizedResources.Thermodinamical, Source={StaticResource LocalizedStrings}}" 
+                                   Style="{StaticResource PhoneTextGroupHeaderStyle}"/>
+                                <TextBlock Text="{Binding Path=LocalizedResources.Density, Source={StaticResource LocalizedStrings}}" 
+                                   Style="{StaticResource PhoneTextNormalStyle}"/>
+                                <TextBlock Text="{Binding Density}" Style="{StaticResource TextAccentStyle}"/>
+                                <TextBlock Text="{Binding Path=LocalizedResources.MeltingPoint, Source={StaticResource LocalizedStrings}}" 
+                                   Style="{StaticResource PhoneTextNormalStyle}"/>
+                                <TextBlock Text="{Binding TemperatureMelting}" Style="{StaticResource TextAccentStyle}"/>
+                                <TextBlock Text="{Binding Path=LocalizedResources.BoilingPoint, Source={StaticResource LocalizedStrings}}" 
+                                   Style="{StaticResource PhoneTextNormalStyle}"/>
+                                <TextBlock Text="{Binding TemperatureBoiling}" Style="{StaticResource TextAccentStyle}"/>
+                                <TextBlock Text="{Binding Path=LocalizedResources.HeatOfMelting, Source={StaticResource LocalizedStrings}}" 
+                                   Style="{StaticResource PhoneTextNormalStyle}"/>
+                                <TextBlock Text="{Binding HeatMelting}" Style="{StaticResource TextAccentStyle}"/>
+                                <TextBlock Text="{Binding Path=LocalizedResources.HeatOfVaporization, Source={StaticResource LocalizedStrings}}" 
+                                   Style="{StaticResource PhoneTextNormalStyle}"/>
+                                <TextBlock Text="{Binding HeatEvaporation}" Style="{StaticResource TextAccentStyle}"/>
+                                <TextBlock Text="{Binding Path=LocalizedResources.MolarHeatCapacity, Source={StaticResource LocalizedStrings}}" 
+                                   Style="{StaticResource PhoneTextNormalStyle}"/>
+                                <TextBlock Text="{Binding HeatCapacity}" Style="{StaticResource TextAccentStyle}"/>
+                                <TextBlock Text="{Binding Path=LocalizedResources.MolarVolume, Source={StaticResource LocalizedStrings}}" 
+                                   Style="{StaticResource PhoneTextNormalStyle}"/>
+                                <TextBlock Text="{Binding Volume}" Style="{StaticResource TextAccentStyle}"/>
+                                <TextBlock Text="{Binding Path=LocalizedResources.ThermalConductivity, Source={StaticResource LocalizedStrings}}" 
+                                   Style="{StaticResource PhoneTextNormalStyle}"/>
+                                <TextBlock Text="{Binding ThermalConductivity}" Style="{StaticResource TextAccentStyle}"/>
+                            </StackPanel>
+                        </ScrollViewer>
+                    </Grid>
+                </controls:PivotItem>
+
+                <controls:PivotItem>
+                    <controls:PivotItem.Header>
+                        <TextBlock Text="{Binding Path=LocalizedResources.Description, Source={StaticResource LocalizedStrings}}"
+                                   Margin="0" Foreground="{StaticResource PhoneAccentBrush}" Style="{StaticResource PhoneTextExtraLargeStyle}"/>
+                    </controls:PivotItem.Header>
+                    <Grid>
+                        <ScrollViewer>
+                            <StackPanel Margin="12,0">
+                                <Image x:Name="ElementImage" HorizontalAlignment="Center"/>
+                                <TextBlock Margin="0, 10, 0, 0" Text="{Binding Description}" TextWrapping="Wrap" 
+                                       Style="{StaticResource PhoneTextNormalStyle}"/>
+                            </StackPanel>
+                        </ScrollViewer>
+                    </Grid>
+                </controls:PivotItem>
+            </controls:Pivot>
+        </Grid>
+    </Grid>
+</common:PhoneApplicationPage>
